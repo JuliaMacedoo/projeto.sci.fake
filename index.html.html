@@ -154,7 +154,7 @@
 
         /* Envie uma Notícia */
         .envie {
-            background-color: #158c85; /* Fundo amarelo claro */
+            background-color: #64bfc5; /* Fundo amarelo claro */
         }
         form {
             max-width: 600px;
@@ -401,8 +401,6 @@
         // Interceptar o envio do formulário para mostrar a seção obrigado
         document.getElementById('form-envio').addEventListener('submit', function(event) {
             event.preventDefault(); // Impede o envio padrão
-            // Aqui você pode adicionar lógica para enviar os dados via AJAX se quiser, mas por simplicidade, apenas mostra obrigado
-            // Para manter o Formspree, você pode usar fetch para enviar e depois mostrar obrigado
             const formData = new FormData(this);
             fetch(this.action, {
                 method: this.method,
